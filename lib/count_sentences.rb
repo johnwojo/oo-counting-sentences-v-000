@@ -18,7 +18,7 @@ class String
     words = []
     self.split("." && "!" && "?")
     self.each do |word|
-      if word ==! " "
+      if !word == " "
         words << word
         words.count
       end
