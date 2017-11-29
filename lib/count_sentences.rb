@@ -21,5 +21,7 @@ class String
       if word ==! " "
         words << word
         words.count
+      end
+    end
   end
 end
