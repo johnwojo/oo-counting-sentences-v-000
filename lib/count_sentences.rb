@@ -15,7 +15,6 @@ class String
   end
 
   def count_sentences
-    words = []
     self.split(". " && "! " && "? ").count
   end
 end
