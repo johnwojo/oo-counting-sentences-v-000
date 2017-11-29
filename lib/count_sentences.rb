@@ -17,12 +17,12 @@ class String
   def count_sentences
     if self.include?("?")
       self.split("?").count
-    
 
     elsif self.include?("!")
       self.split("!").count
 
     else
       self.split(".").count
+    end
   end
 end
