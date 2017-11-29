@@ -15,7 +15,21 @@ class String
   end
 
   def count_sentences
-      self.split(".").count
-      binding.pry
+    words = []
+not_words = []
+if !self.include?("." || "?" || "!")
+  0 
+
+else 
+  self.include?(".")
+  self.split(/(\?|\.|\!)/).each do |target|
+    if target == "." || target == "!" || target == "?" || target == "" 
+      not_words << target
+    else 
+      words << target
+  end
+end
+words.count
+end
   end
 end
