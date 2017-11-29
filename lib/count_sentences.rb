@@ -15,15 +15,11 @@ class String
   end
 
   def count_sentences
-    if self.include?("?")
+    if self.include?("?" || "!")
       yogurt = self.split("?").count
+      goat = self.split("!").count
       cat = self.split(".").count
-      yogurt + cat
-
-    elsif self.include?("!")
-        yogurt = self.split("!").count
-        cat = self.split(".").count
-        yogurt + cat
+      yogurt + cat + goat
 
     else
       self.split(".").count
