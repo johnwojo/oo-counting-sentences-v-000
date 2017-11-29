@@ -20,5 +20,6 @@ class String
           words << word
     end
         words.count
+        binding.pry
   end
 end
