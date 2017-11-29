@@ -20,6 +20,7 @@ class String
         if !words == "." || !words == " " || !words == "!"
           words << word
       end
+    end
         words.count
   end
 end
