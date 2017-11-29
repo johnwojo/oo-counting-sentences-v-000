@@ -21,7 +21,9 @@ class String
       yogurt + cat
 
     elsif self.include?("!")
-      self.split("!").count
+        yogurt = self.split("!").count
+        cat = self.split(".").count
+        yogurt + cat
 
     else
       self.split(".").count
