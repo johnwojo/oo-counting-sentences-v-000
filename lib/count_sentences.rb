@@ -18,8 +18,8 @@ class String
     words = []
     self.split("." && "!" && "?").each do |word|
         words << word
-        number = words.count
-        return number
+      end
+        words.count
     end
   end
 end
