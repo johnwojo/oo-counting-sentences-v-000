@@ -16,8 +16,7 @@ class String
 
   def count_sentences
     words = []
-    self.split("." && "!" && "?")
-    self.each do |word|
+    self.split("." && "!" && "?").each do |word|
       if !word == " "
         words << word
         words.count
